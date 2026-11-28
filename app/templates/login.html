@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Sign In – UniSecure{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-5">
+    <div class="card shadow-sm">
+      <div class="card-body p-4">
+        <h4 class="mb-3">UniSecure Sign In</h4>
+        <form method="post" action="{{ url_for('web.login') }}">
+          <div class="mb-3">
+            <label class="form-label">Username</label>
+            <input class="form-control" name="username" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input class="form-control" type="password" name="password" required>
+          </div>
+          <button class="btn btn-primary w-100" type="submit">Sign In</button>
+        </form>
+        <hr>
+        <p class="small mb-0">New student? <a href="{{ url_for('web.register') }}">Register here</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
