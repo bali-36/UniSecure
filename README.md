@@ -65,7 +65,8 @@ The project plans to implement and document at least eight distinct issues, incl
 - **Student:** `bilal` / `Student@123`, `huraira` / `Student@123`, `huzaifa` / `Student@123`
 
 ## Documentation
-- Phase 1 Attack-Surface Map & Threat Model: `docs/attack-surface-threat-model.md`
+- Phase 1 Attack-Surface Map & Threat Model: `docs/UniSecure_Phase1_Attack_Surface_Threat_Model.docx`
+- Microsoft Threat Modeling Tool Model: `docs/unisecure_threat_model.tm7`
 
 ## Ethics and scope
 Testing is restricted to the team's own local application and authorized test data. Do not test third-party production systems. Use synthetic records only.
