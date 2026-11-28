@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Register – UniSecure{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <div class="card shadow-sm">
+      <div class="card-body p-4">
+        <h4 class="mb-3">Student Registration</h4>
+        <form method="post" action="{{ url_for('web.register') }}">
+          <div class="mb-2">
+            <label class="form-label">Full Name</label>
+            <input class="form-control" name="full_name" required>
+          </div>
+          <div class="mb-2">
+            <label class="form-label">Roll / Identifier No</label>
+            <input class="form-control" name="identifier_no" required>
+          </div>
+          <div class="mb-2">
+            <label class="form-label">Username</label>
+            <input class="form-control" name="username" required>
+          </div>
+          <div class="mb-2">
+            <label class="form-label">Email</label>
+            <input class="form-control" type="email" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input class="form-control" type="password" name="password" required>
+          </div>
+          <button class="btn btn-primary w-100" type="submit">Create Student Account</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
